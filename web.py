@@ -14,9 +14,9 @@ try:
 except locale.Error as e:
     print(f"Не вдалося встановити локаль: {e}")
 
-st.markdown("<h1 style='text-align: center; font-family: Helvetica, sans-serif; font-weight: bold;'>Привіт!</h1>",
+st.markdown("<h1 style='text-align: center; font-family: Helvetica, sans-serif; font-weight: 900;'>Привіт!</h1>",
             unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center; font-family: Helvetica, sans-serif; font-weight: bold;'>Який чудовий день сьогодні!</h2>",
+st.markdown("<h2 style='border-radius: 50px; background-color:#FFF7D4; text-align: center; font-family: Helvetica, sans-serif; font-weight: 400; margin: 20px'>Який чудовий день сьогодні!</h2>",
             unsafe_allow_html=True)
 
 
@@ -39,26 +39,25 @@ if button_comp_clicked:
     try:
         compliment = get_compliment_line(compliment_file)
         st.markdown(
-            f'<div style="background-color:#FFB996; color:black; padding:10px; margin:10px;'
-            f'border-radius: 5px; font-weight: bold;">{compliment}</div>',
+            f'<div style="background-color:#FFB996; color:black; padding:20px; margin:20px;'
+            f'border-radius: 50px; font-weight: bold;">{compliment}</div>',
             unsafe_allow_html=True
         )
 
     except ValueError:
-        st.warning(f"{user} сонечко, ти щось не те робиш ;)")
+        st.warning(f"Сонечко, ти щось не те робиш ;)")
 
 
 if button_oracle_clicked:
     try:
         oracle = get_oracle_line(oracle_file)
         st.markdown(
-            f'<div style="background-color:#FDFFAB; color:black; padding:10px; margin:10px'
-            f'border-radius: 5px; font-weight: bold;">{oracle}</div>',
+            f'<div style="border-radius: 50px; background-color:#FDFFAB; color:black; padding:20px; margin:20px; font-weight: bold; ">{oracle}</div>',
             unsafe_allow_html=True
         )
 
     except ValueError:
-        st.warning(f"{user}, сонечко, ти щось не те робиш ;)")
+        st.warning(f"Сонечко, ти щось не те робиш ;)")
 
 
 if button_animal_clicked:
@@ -68,13 +67,12 @@ if button_animal_clicked:
         animal = get_animal_line(animal_file)
         action = get_action_line(action_file)
         st.markdown(
-            f'<div style="background-color:#756AB6; color:white; padding:10px; margin:10px'
-            f'border-radius: 5px; font-weight: bold;">{epitet}{color}{animal}, який {action}</div>',
+            f'<div style="border-radius: 50px; background-color:#756AB6; color:white; padding:20px; margin:20px; font-weight: bold;">{epitet}{color}{animal}, який {action}</div>',
             unsafe_allow_html=True
         )
 
     except ValueError:
-        st.warning(f"{user}, сонечко, ти щось не те робиш ;)")
+        st.warning(f"Сонечко, ти щось не те робиш ;)")
 
 
 st.markdown("<h4 style='text-align: center; font-family: Helvetica, sans-serif; font-size: 16px; font-weight: lighter; margin-top: 200px;'>Версія 1.0.0</h4>",
