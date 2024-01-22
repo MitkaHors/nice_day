@@ -16,7 +16,7 @@ except locale.Error as e:
 
 st.markdown("<h1 style='text-align: center; font-family: Helvetica, sans-serif; font-weight: 900;'>Привіт!</h1>",
             unsafe_allow_html=True)
-st.markdown("<h2 style='border-radius: 50px; background-color:#FFF7D4; text-align: center; font-family: Helvetica, sans-serif; font-weight: 400; margin: 20px'>Який чудовий день сьогодні!</h2>",
+st.markdown("<h2 style='border-radius: 50px; text-align: center; font-family: Helvetica, sans-serif; font-weight: 400; margin: 20px'>Який чудовий день сьогодні!</h2>",
             unsafe_allow_html=True)
 
 
@@ -75,6 +75,6 @@ if button_animal_clicked:
         st.warning(f"Сонечко, ти щось не те робиш ;)")
 
 
-st.markdown("<h4 style='text-align: center; font-family: Helvetica, sans-serif; font-size: 16px; font-weight: lighter; margin-top: 200px;'>Версія 1.0.0</h4>",
+st.markdown("<h4 style='text-align: center; font-family: Helvetica, sans-serif; font-size: 16px; font-weight: lighter; margin-top: 200px;'>Версія 1.0.1</h4>",
             unsafe_allow_html=True)
 
